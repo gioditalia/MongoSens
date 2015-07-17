@@ -1,0 +1,41 @@
+Per il corretto funzionamento del server è necessaria la corretta configurazione
+del file config.json.
+
+#########################
+###esempio config.json###
+#########################
+
+{
+    "IP":"<IP del database mongoDB>",
+
+    "username":"<nome utente con l'autorizzazione necessarie per la modifica del database>",
+    "password":"<password dell'utente>",
+
+    "userdatabase":"<databse per l'autenticazione>",
+    "maindatabase":"<databse per la raccolta dei dati>",
+    "maincollection":"<collection principale>",
+    "typecollection":"<collection con i tipi di sensori da cercare*>",
+    "discardcollection":"<collection degli scarti>",
+    "tagscollection":"<collection per la raccolta dei tag per i gruppi di sensori>",
+    "lastdatacollection":"<collection per l'ultima raccolta>",
+
+    "URL":["<array di indirizzi per la raccolta dei dati sui sensori>","...","..."],
+
+    "kgroup":"<chiave per identificare i gruppi di sensori>",
+
+    "update_key":"<chiave per identificare l'ultimo aggiornamento del sensore>",
+    "battery_key":"<chiave per identificare il livello di batteria del sensore>",
+    "loc_key":["<chiave longitudine>","<chiave latitudine>"],
+
+    "lapse":<intervallo ad ogni raccolta di dati>,
+    "port":<numero porta>,
+    "bind_IP":"<indirizzo da legare al server>"
+}
+
+*la collection indicata dalla chiave typecollection non deve essere vuota
+ al primo avvio si deve riempire con un array json, la chive dell'array DEVE
+essere type.
+
+###Esempio di inserimento dei sensori nella collection indicata in "typecollection" 
+
+db."typecollection".insert({"type":["Speed","Altitude","CO","Temperature","Battery level","Humidity","Relative humidity","Soil Moisture","Atmospheric Pressure","Noise","Luminosity"]})

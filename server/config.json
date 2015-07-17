@@ -1,0 +1,21 @@
+{
+    "IP":"12*.***.**.***",
+    "username":"admin",
+    "password":"secretpass",
+    "userdatabase":"admin",
+    "maindatabase":"mongosens",
+    "maincollection":"sens",
+    "typecollection":"type",
+    "discardcollection":"discard",
+    "tagscollection":"info",
+    "sourceinfo":"sourcecollection",
+    "URL":["http://maps.smartsantander.eu/getdata.php","http://some.url"],
+    "tag_key":"tags",
+    "update_key":"Last update",
+    "battery_key":"Battery level",
+    "loc_key":["longitude","latitude"],
+    "id_key":"id",
+    "lapse":1800,
+    "port":8888,
+    "bind_IP":"127.0.0.1"
+}
