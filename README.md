@@ -10,3 +10,6 @@ The first part is used to access the database.
 The second part configures collections used.
 It defines the key fundamentals for the sensors and the control of errors.
 Finally sets the time of collection and minimal configuration to respond to client.
+
+#Important
+The software comes as an exercise with the databse MongoDB and does not provide for further developments.
