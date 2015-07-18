@@ -11,7 +11,7 @@ The key part of the software is mongosens the server.<br/>
 Also crucial is the configuration file: config.json<br/>
 ![alt tag](https://github.com/inna92/MongoSens/blob/master/server/config.png)<br/>
 The first part is used to access the database.<br/>
-  - "IP":"12*.***.**.***"
+  - "IP":"111.222.333.444"
   - "username":"admin"
   - "password":"secretpass"
   - "userdatabase":"admin"<br/><br/>
