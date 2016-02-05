@@ -1,11 +1,6 @@
 # MongoSens
 Java software that collects sensor data in json format and collects in a database MongoDB
 
-#Important
-----------
-The software is **ONLY AN EXERCISE** with java, databse MongoDB and json.<br />
-Does **NOT** provide for further developments.
-
 #Let's start
 The key part of the software is mongosens the server.<br/>
 Also crucial is the configuration file: config.json<br/>
